@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+
     <title>currenttodos</title>
-</head>
-<body>
+
 {% extends 'todo/base.html' %}
 {% block content %}
-    <main>current</main>
+    current
+    <ul>
+        {% for todo in todos %}
+        <li>
+        <a href="{% url 'viewtodo'  todo.id %}">
+            {% if todo.important %} <b> {% endif %} {{ todo.title }}{% if todo.important %}</b>{% endif %}
+            {% if todo.memo %} - {{ todo.memo }}{% endif %}
+        </a>
+        </li>
+
+        {% endfor %}
+    </ul>
 {% endblock %}
-</body>
-</html>

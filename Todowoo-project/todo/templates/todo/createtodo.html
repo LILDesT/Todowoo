@@ -1,0 +1,18 @@
+
+{% block content %}
+
+{% if user.is_authenticated %}
+    <p>Logged in as {{ user.username }}</p>  <!-- Display the username -->
+{% endif %}
+
+<h1>Create</h1>
+
+<h2>{{ error }}</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Create</button>
+
+</form>
+{% endblock %}
