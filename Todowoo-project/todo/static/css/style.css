@@ -1,0 +1,52 @@
+/* General body styles */
+body {
+    background-color: #f8f9fa; /* Soft gray background for light theme */
+    font-family: 'Arial', sans-serif; /* Ensures typography is consistent */
+}
+
+/* Navbar customizations */
+.navbar {
+    background-color: #ff7f50; /* Coral background for a vibrant top bar */
+    border-bottom: 3px solid #007bff; /* Blue border for a slight contrast */
+}
+
+.navbar-brand span {
+    color: #ffffff; /* White text for contrast */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff !important; /* Ensures all navigation links are white */
+    font-weight: bold;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #000 !important; /* Dark text on hover/focus for better visibility */
+    background-color: #ffe5b4; /* Light peach background on hover/focus */
+}
+
+/* Button styles for logout and other actions */
+button, .btn {
+    background-color: #28a745; /* Green background for buttons */
+    color: #ffffff;
+    border: none;
+}
+
+button:hover, .btn:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+}
+
+/* Content container */
+.container {
+    padding: 20px;
+    background-color: #ffffff; /* White background for content areas */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin-top: 20px;
+}
+
+/* Utility classes */
+.hidden {
+    display: none; /* Utility class for hiding elements */
+}
